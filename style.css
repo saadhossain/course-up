@@ -6,8 +6,16 @@ body {
     margin: 0;
     padding: 0;
 }
+main{
+    display: flex;
+    justify-content: center;
+}
 .container{
     width: 992px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding:30px;
 }
 /*--------------------
 Header area styling
@@ -17,7 +25,10 @@ header{
     justify-content: center;
     background-image: linear-gradient(to top, #F08D78, #F26C4F);
 }
-.menu{
+.menu-container{
+    width: 992px;
+}
+.menu-container{
     display: flex;
     justify-content: space-between;
 }
@@ -47,4 +58,65 @@ header{
 .nav-link img{
     height: 40px;
     width: 40px;
+}
+
+/*-----------------------
+top Student styling
+----------------------- */
+.section-title{
+    color:#F26C4F;
+    font-size: 24px;
+    line-height: 20px;
+}
+.students{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.student{
+    display: flex;
+    align-items: center;
+}
+.student h3{
+    margin-left:16px;
+}
+.divide{
+    border: 1px solid #D1D1D1;
+    margin:30px 0px;
+}
+
+/*----------------------
+Courses Section Styling
+------------------------*/
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 100px;
+}
+
+.course-details h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin:5px 0px;
+}
+.course-tutor a{
+    text-decoration: none;
+    color: #F26C4F;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-info .fa-solid{
+    color:#FFC014;
+}
+.course-info .fa-solid:last-child{
+    color:#AEAEAE;
+}
+.course-info .duration{
+    background-color: #FFE4E8;
+    padding:5px 10px;
+    border-radius: 15px;
 }
