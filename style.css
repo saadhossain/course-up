@@ -5,6 +5,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    transition: 0.5s all ease-in-out;
+    scroll-behavior: smooth;
 }
 main{
     display: flex;
@@ -155,4 +157,25 @@ Latest blog Section Styling
 .blog-author img{
     height: 20px;
     width: 20px;
+}
+footer{
+    background-image: linear-gradient(to bottom, #F08D78, #F26C4F);
+    text-align: center;
+    padding:2px 0px;
+}
+.footer-branding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-branding img{
+    height: 40px;
+    width: 40px;
+}
+.footer-branding h3{
+    font-family: 'Kaushan Script', cursive;
+    color:#4242E5;
+}
+hr{
+    border:1px solid #4a4a4a;
 }
